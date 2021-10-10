@@ -1,0 +1,10 @@
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe.config
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.pdb
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.AssemblyReference.cache
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.Form1.resources
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.Properties.Resources.resources
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.GenerateResource.cache
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.CoreCompileInputs.cache
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.exe
+C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.pdb
