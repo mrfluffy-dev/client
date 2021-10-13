@@ -152,5 +152,20 @@ namespace FinalPojectPRG282
                 MessageBox.Show($"Deleted details of student number: {int.Parse(txtStudentNum.Text)}");
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                txtStudentNum.Text = row.Cells["StudentNum"].Value.ToString();
+                txtname.Text = row.Cells["StudentName"].Value.ToString();
+                txtsurname.Text = row.Cells["StudentSurname"].Value.ToString();
+                txtNumber.Text = row.Cells["StudentPhone"].Value.ToString();
+                txtAddress.Text = row.Cells["StudentAddress"].Value.ToString();
+                txtModule.Text = row.Cells["StudentModule"].Value.ToString();
+            }
+        }
     }
 }
