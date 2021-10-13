@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
 
 namespace FinalPojectPRG282
 {
@@ -16,15 +18,138 @@ namespace FinalPojectPRG282
         {
             InitializeComponent();
         }
-
+        DataHandler dh = new DataHandler();
         private void pic_MouseClick(object sender, MouseEventArgs e)
         {
-            OpenFileDialog o = new OpenFileDialog();
-            o.Title = "Image";
-            o.Filter = "JPG | *.jpg| PNG | *.png";
-            if(o.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+
+        }
+
+        private void btncreate_Click(object sender, EventArgs e)
+        {
+            int studentNumber = int.Parse(txtStudentNum.Text);
+            string studentName = txtname.Text;
+            string studentSurname = txtsurname.Text;
+            string imgLoc = "";
+            byte[] studentFoto;
+         
+                
+                OpenFileDialog dlg = new OpenFileDialog();
+                dlg.Title = "Select Picture";
+                dlg.Filter = "JPG | *.jpg| PNG | *.png";
+                if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imgLoc = dlg.FileName.ToString();
+                    pic.ImageLocation = imgLoc;
+                }
+  
+            
+      
+                studentFoto = null;
+                FileStream fs = new FileStream(imgLoc, FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fs);
+                studentFoto = br.ReadBytes((int)fs.Length);               
+     
+            
+
+
+            DateTime dOB = DOB.Value;
+            string studentGender = string.Empty;
+            if (Male.Checked == true)
             {
-                pic.ImageLocation = o.FileName;
+                studentGender = "Male";
+            }
+            else if (Female.Checked == true)
+            {
+                studentGender = "Female";
+            }
+            else
+            {
+                MessageBox.Show("Please select A gender");
+            }
+            string studentPhone = txtNumber.Text;
+            string studentModule = txtModule.Text;
+            string studentAddres = txtAddress.Text;
+            Student temp = new Student(studentNumber, studentName, studentSurname, studentFoto, dOB, studentGender, studentPhone, studentAddres, studentModule);
+
+            if (dh.Create(temp))
+            {
+                MessageBox.Show("Details saved!");
+            }
+        }
+
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = dh.getStudents();
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            int studentNumber = int.Parse(txtStudentNum.Text);
+            string studentName = txtname.Text;
+            string studentSurname = txtsurname.Text;
+            string imgLoc = "";
+            byte[] studentFoto;
+
+
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Title = "Select Picture";
+            dlg.Filter = "JPG | *.jpg| PNG | *.png";
+            if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                imgLoc = dlg.FileName.ToString();
+                pic.ImageLocation = imgLoc;
+            }
+
+
+
+            studentFoto = null;
+            FileStream fs = new FileStream(imgLoc, FileMode.Open, FileAccess.Read);
+            BinaryReader br = new BinaryReader(fs);
+            studentFoto = br.ReadBytes((int)fs.Length);
+
+
+
+
+            DateTime dOB = DOB.Value;
+            string studentGender = string.Empty;
+            if (Male.Checked == true)
+            {
+                studentGender = "Male";
+            }
+            else if (Female.Checked == true)
+            {
+                studentGender = "Female";
+            }
+            else
+            {
+                MessageBox.Show("Please select A gender");
+            }
+            string studentPhone = txtNumber.Text;
+            string studentModule = txtModule.Text;
+            string studentAddres = txtAddress.Text;
+            Student temp = new Student(studentNumber, studentName, studentSurname, studentFoto, dOB, studentGender, studentPhone, studentAddres, studentModule);
+            if (dh.Update(temp))
+            {
+                MessageBox.Show("Successfully updated");
+            }
+            else
+            {
+                MessageBox.Show("User does not exist");
+            }
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            int sNum = int.Parse(txtStudentNum.Text);
+            dataGridView1.DataSource = dh.Search(sNum);
+        }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            dh.Delete(int.Parse(txtStudentNum.Text));
+            if (dh.Delete(int.Parse(txtStudentNum.Text)))
+            {
+                MessageBox.Show($"Deleted details of student number: {int.Parse(txtStudentNum.Text)}");
             }
         }
     }

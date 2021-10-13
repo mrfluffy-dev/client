@@ -63,6 +63,16 @@ namespace FinalPojectPRG282.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap D7EAanzU8AErVYn {
+            get {
+                object obj = ResourceManager.GetObject("D7EAanzU8AErVYn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dsadasdsasdasdasd {
             get {
                 object obj = ResourceManager.GetObject("dsadasdsasdasdasd", resourceCulture);

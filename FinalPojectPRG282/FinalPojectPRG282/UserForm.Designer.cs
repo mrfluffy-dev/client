@@ -40,23 +40,23 @@ namespace FinalPojectPRG282
             this.Male = new System.Windows.Forms.RadioButton();
             this.Female = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNum = new System.Windows.Forms.TextBox();
+            this.txtStudentNum = new System.Windows.Forms.TextBox();
             this.btnsearch = new System.Windows.Forms.Button();
-            this.Module = new System.Windows.Forms.TextBox();
+            this.txtModule = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.Address = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Pnumber = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtsurname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pic = new System.Windows.Forms.PictureBox();
             this.DOB = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pic = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -82,8 +82,9 @@ namespace FinalPojectPRG282
             this.btnRead.Name = "btnRead";
             this.btnRead.Size = new System.Drawing.Size(106, 25);
             this.btnRead.TabIndex = 23;
-            this.btnRead.Text = "Create";
+            this.btnRead.Text = "Read";
             this.btnRead.UseVisualStyleBackColor = true;
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
             // btnupdate
             // 
@@ -93,6 +94,7 @@ namespace FinalPojectPRG282
             this.btnupdate.TabIndex = 19;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btndelete
             // 
@@ -102,6 +104,7 @@ namespace FinalPojectPRG282
             this.btndelete.TabIndex = 20;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btncreate
             // 
@@ -111,6 +114,7 @@ namespace FinalPojectPRG282
             this.btncreate.TabIndex = 22;
             this.btncreate.Text = "Create";
             this.btncreate.UseVisualStyleBackColor = true;
+            this.btncreate.Click += new System.EventHandler(this.btncreate_Click);
             // 
             // dataGridView1
             // 
@@ -125,14 +129,14 @@ namespace FinalPojectPRG282
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtNum);
+            this.panel1.Controls.Add(this.txtStudentNum);
             this.panel1.Controls.Add(this.btnsearch);
-            this.panel1.Controls.Add(this.Module);
+            this.panel1.Controls.Add(this.txtModule);
             this.panel1.Controls.Add(this.txtname);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.Address);
+            this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.Pnumber);
+            this.panel1.Controls.Add(this.txtNumber);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtsurname);
@@ -191,13 +195,13 @@ namespace FinalPojectPRG282
             this.label1.TabIndex = 0;
             this.label1.Text = "Number";
             // 
-            // txtNum
+            // txtStudentNum
             // 
-            this.txtNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.txtNum.Location = new System.Drawing.Point(119, 14);
-            this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(101, 23);
-            this.txtNum.TabIndex = 9;
+            this.txtStudentNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.txtStudentNum.Location = new System.Drawing.Point(119, 14);
+            this.txtStudentNum.Name = "txtStudentNum";
+            this.txtStudentNum.Size = new System.Drawing.Size(101, 23);
+            this.txtStudentNum.TabIndex = 9;
             // 
             // btnsearch
             // 
@@ -207,14 +211,15 @@ namespace FinalPojectPRG282
             this.btnsearch.TabIndex = 21;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
-            // Module
+            // txtModule
             // 
-            this.Module.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Module.Location = new System.Drawing.Point(119, 386);
-            this.Module.Name = "Module";
-            this.Module.Size = new System.Drawing.Size(101, 23);
-            this.Module.TabIndex = 18;
+            this.txtModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.txtModule.Location = new System.Drawing.Point(119, 386);
+            this.txtModule.Name = "txtModule";
+            this.txtModule.Size = new System.Drawing.Size(101, 23);
+            this.txtModule.TabIndex = 18;
             // 
             // txtname
             // 
@@ -235,13 +240,13 @@ namespace FinalPojectPRG282
             this.label9.TabIndex = 8;
             this.label9.Text = "Module";
             // 
-            // Address
+            // txtAddress
             // 
-            this.Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Address.Location = new System.Drawing.Point(119, 349);
-            this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(101, 23);
-            this.Address.TabIndex = 17;
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.txtAddress.Location = new System.Drawing.Point(119, 349);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(101, 23);
+            this.txtAddress.TabIndex = 17;
             // 
             // label2
             // 
@@ -254,13 +259,13 @@ namespace FinalPojectPRG282
             this.label2.TabIndex = 1;
             this.label2.Text = "Name";
             // 
-            // Pnumber
+            // txtNumber
             // 
-            this.Pnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Pnumber.Location = new System.Drawing.Point(119, 319);
-            this.Pnumber.Name = "Pnumber";
-            this.Pnumber.Size = new System.Drawing.Size(101, 23);
-            this.Pnumber.TabIndex = 16;
+            this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.txtNumber.Location = new System.Drawing.Point(119, 319);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(101, 23);
+            this.txtNumber.TabIndex = 16;
             // 
             // label8
             // 
@@ -314,17 +319,6 @@ namespace FinalPojectPRG282
             this.label7.TabIndex = 6;
             this.label7.Text = "Phone";
             // 
-            // pic
-            // 
-            this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic.Location = new System.Drawing.Point(119, 121);
-            this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(79, 64);
-            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic.TabIndex = 12;
-            this.pic.TabStop = false;
-            this.pic.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pic_MouseClick);
-            // 
             // DOB
             // 
             this.DOB.Location = new System.Drawing.Point(119, 201);
@@ -354,12 +348,24 @@ namespace FinalPojectPRG282
             this.label6.TabIndex = 5;
             this.label6.Text = "Gender";
             // 
+            // pic
+            // 
+            this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic.Image = global::FinalPojectPRG282.Properties.Resources.D7EAanzU8AErVYn;
+            this.pic.Location = new System.Drawing.Point(119, 121);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(79, 64);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic.TabIndex = 12;
+            this.pic.TabStop = false;
+            this.pic.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pic_MouseClick);
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(722, 512);
+            this.ClientSize = new System.Drawing.Size(720, 512);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
@@ -388,14 +394,14 @@ namespace FinalPojectPRG282
         private System.Windows.Forms.RadioButton Male;
         private System.Windows.Forms.RadioButton Female;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNum;
+        private System.Windows.Forms.TextBox txtStudentNum;
         private System.Windows.Forms.Button btnsearch;
-        private System.Windows.Forms.TextBox Module;
+        private System.Windows.Forms.TextBox txtModule;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox Address;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Pnumber;
+        private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtsurname;

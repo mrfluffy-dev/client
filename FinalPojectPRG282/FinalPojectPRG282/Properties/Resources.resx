@@ -121,6 +121,9 @@
   <data name="kikey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kikey.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mikey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mikey2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mikey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mikey.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,7 +133,7 @@
   <data name="dsadasdsasdasdasd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dsadasdsasdasdasd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mikey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mikey2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="D7EAanzU8AErVYn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\D7EAanzU8AErVYn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
