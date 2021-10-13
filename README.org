@@ -18,4 +18,5 @@
 8. To log in a user simply type in the Username and passwords in to thoe login page and click the "Login" Button.
 9. To regester a new user type in the Username and passwords for the new user (Will not allow in the username is taken) and click the "Regester" Button.
 10. If the "Login" Botton is Clicked and the user credentials are correct the users managing page will open.
-11. Will add more info when The UserForm is done.
+11. Once the user is logd in from thre the data of the students can be alterd or created.
+12. the "dbStudents.bak" for the database can be found in the "FinalProjectPRG282" folder

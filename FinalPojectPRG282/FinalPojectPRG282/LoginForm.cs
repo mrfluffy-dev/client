@@ -9,19 +9,18 @@ namespace FinalPojectPRG282
 {
     public partial class LoginForm : Form
     {
-        string path = "Users.txt";
-        List<string> users = new List<string>();
+        FileHandler fh = new FileHandler();
         public LoginForm()
         {
             InitializeComponent();
             
-            if(!File.Exists(path))
+            if(!File.Exists(fh.path))
             {
-                File.Create(path);
+                File.Create(fh.path);
             }
             else
             {
-                users = File.ReadLines(path).ToList();
+                fh.users = File.ReadLines(fh.path).ToList();
             }
         }
   
@@ -31,17 +30,17 @@ namespace FinalPojectPRG282
             string username = txtusern.Text;
             string password = txtpassw.Text;
             
-            if (users.Contains(username))
+            if (fh.users.Contains(username))
             {
                 MessageBox.Show("Username already exists.", "Error");
             }
             else
             {
-                users.Add(username);
-                users.Add(en.Encript(password));
-                using (StreamWriter sw = new StreamWriter(path))
+                fh.users.Add(username);
+                fh.users.Add(en.Encript(password));
+                using (StreamWriter sw = new StreamWriter(fh.path))
                 {
-                    foreach ( var user in users)
+                    foreach ( var user in fh.users)
                     {
                         sw.WriteLine(user);
                     }
@@ -49,8 +48,6 @@ namespace FinalPojectPRG282
                 MessageBox.Show("User: " + username + " added", "Success");
                 
             }
-            
-
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
@@ -58,10 +55,10 @@ namespace FinalPojectPRG282
             Encriptor en = new Encriptor();
             string username = txtusern.Text;
             string password = txtpassw.Text;
-            if (users.Contains(username))
+            if (fh.users.Contains(username))
             {
-                int userIndex = users.IndexOf(username);
-                if (password == en.Decript(users[userIndex + 1]))
+                int userIndex = fh.users.IndexOf(username);
+                if (password == en.Decript(fh.users[userIndex + 1]))
                 {
                     UserForm f2 = new UserForm();
                     f2.Show();
@@ -75,8 +72,6 @@ namespace FinalPojectPRG282
             {
                 MessageBox.Show("Username does not exist", "Error");
             }
-        }
-
-       
+        } 
     }
 }
