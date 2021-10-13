@@ -8,14 +8,14 @@
 2. Janco Bester
 3. Kyle Knoetze
 ** Basic Info on how to use the project
-*** The project is stored in the "FinalProjectPRG282" Folder.
-*** To open the project open the "FinalProjectPRG282" and open the "FinalProjectPRG282.sln" in Visual Studio.
-*** Make sure that .net Framework 3.5 is installed on the system.
-*** Once the project is open in Visual Studio press on on "Start" in Visual Studio or press "F5" on your keyboard to test the program.
-*** The final Binary is stored in (From where the "FinalProjectPRG282.sln" is stored) "FinalProjectPRG282\bin\Debug\FinalProjectPRG282.exe".
-*** The usernames and passwords are stored in a text file (in the Debug directory) called "Users.txt".
-*** The passwords are encripted but the usernames are not.
-*** To log in a user simply type in the Username and passwords in to thoe login page and click the "Login" Button.
-*** To regester a new user type in the Username and passwords for the new user (Will not allow in the username is taken) and click the "Regester" Button.
-*** If the "Login" Botton is Clicked and the user credentials are correct the users managing page will open.
-*** Will add more info when The UserForm is done.
+1. The project is stored in the "FinalProjectPRG282" Folder.
+2. To open the project open the "FinalProjectPRG282" and open the "FinalProjectPRG282.sln" in Visual Studio.
+3. Make sure that .net Framework 3.5 is installed on the system.
+4. Once the project is open in Visual Studio press on on "Start" in Visual Studio or press "F5" on your keyboard to test the program.
+5. The final Binary is stored in (From where the "FinalProjectPRG282.sln" is stored) "FinalProjectPRG282\bin\Debug\FinalProjectPRG282.exe".
+6. The usernames and passwords are stored in a text file (in the Debug directory) called "Users.txt".
+7. The passwords are encripted but the usernames are not.
+8. To log in a user simply type in the Username and passwords in to thoe login page and click the "Login" Button.
+9. To regester a new user type in the Username and passwords for the new user (Will not allow in the username is taken) and click the "Regester" Button.
+10. If the "Login" Botton is Clicked and the user credentials are correct the users managing page will open.
+11. Will add more info when The UserForm is done.
