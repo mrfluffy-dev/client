@@ -53,10 +53,10 @@ namespace FinalPojectPRG282
             this.txtsurname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pic = new System.Windows.Forms.PictureBox();
             this.DOB = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pic = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -319,6 +319,17 @@ namespace FinalPojectPRG282
             this.label7.TabIndex = 6;
             this.label7.Text = "Phone";
             // 
+            // pic
+            // 
+            this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic.Location = new System.Drawing.Point(119, 121);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(79, 64);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic.TabIndex = 12;
+            this.pic.TabStop = false;
+            this.pic.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pic_MouseClick);
+            // 
             // DOB
             // 
             this.DOB.Location = new System.Drawing.Point(119, 201);
@@ -347,18 +358,6 @@ namespace FinalPojectPRG282
             this.label6.Size = new System.Drawing.Size(84, 26);
             this.label6.TabIndex = 5;
             this.label6.Text = "Gender";
-            // 
-            // pic
-            // 
-            this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic.Image = global::FinalPojectPRG282.Properties.Resources.D7EAanzU8AErVYn;
-            this.pic.Location = new System.Drawing.Point(119, 121);
-            this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(79, 64);
-            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic.TabIndex = 12;
-            this.pic.TabStop = false;
-            this.pic.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pic_MouseClick);
             // 
             // UserForm
             // 
