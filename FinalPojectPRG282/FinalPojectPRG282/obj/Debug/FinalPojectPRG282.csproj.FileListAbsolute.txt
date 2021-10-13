@@ -8,3 +8,14 @@ C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalP
 C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.CoreCompileInputs.cache
 C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.exe
 C:\Users\skyfa\source\repos\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.pdb
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe.config
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.pdb
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.AssemblyReference.cache
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.Properties.Resources.resources
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.GenerateResource.cache
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.CoreCompileInputs.cache
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.exe
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.pdb
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.UserForm.resources
+C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.LoginForm.resources
