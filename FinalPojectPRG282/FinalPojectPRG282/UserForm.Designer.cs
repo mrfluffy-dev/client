@@ -30,6 +30,7 @@ namespace FinalPojectPRG282
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRead = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btncreate = new System.Windows.Forms.Button();
@@ -66,17 +67,27 @@ namespace FinalPojectPRG282
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnRead);
             this.panel2.Controls.Add(this.btnupdate);
             this.panel2.Controls.Add(this.btndelete);
             this.panel2.Controls.Add(this.btncreate);
             this.panel2.Location = new System.Drawing.Point(6, 457);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(353, 41);
+            this.panel2.Size = new System.Drawing.Size(707, 41);
             this.panel2.TabIndex = 28;
+            // 
+            // btnRead
+            // 
+            this.btnRead.Location = new System.Drawing.Point(210, 6);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(106, 25);
+            this.btnRead.TabIndex = 23;
+            this.btnRead.Text = "Create";
+            this.btnRead.UseVisualStyleBackColor = true;
             // 
             // btnupdate
             // 
-            this.btnupdate.Location = new System.Drawing.Point(11, 6);
+            this.btnupdate.Location = new System.Drawing.Point(385, 6);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(106, 25);
             this.btnupdate.TabIndex = 19;
@@ -85,7 +96,7 @@ namespace FinalPojectPRG282
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(123, 6);
+            this.btndelete.Location = new System.Drawing.Point(544, 6);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(106, 25);
             this.btndelete.TabIndex = 20;
@@ -94,7 +105,7 @@ namespace FinalPojectPRG282
             // 
             // btncreate
             // 
-            this.btncreate.Location = new System.Drawing.Point(235, 6);
+            this.btncreate.Location = new System.Drawing.Point(35, 6);
             this.btncreate.Name = "btncreate";
             this.btncreate.Size = new System.Drawing.Size(106, 25);
             this.btncreate.TabIndex = 22;
@@ -305,11 +316,14 @@ namespace FinalPojectPRG282
             // 
             // pic
             // 
+            this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pic.Location = new System.Drawing.Point(119, 121);
             this.pic.Name = "pic";
             this.pic.Size = new System.Drawing.Size(79, 64);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic.TabIndex = 12;
             this.pic.TabStop = false;
+            this.pic.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pic_MouseClick);
             // 
             // DOB
             // 
@@ -344,6 +358,7 @@ namespace FinalPojectPRG282
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(722, 512);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
@@ -390,5 +405,6 @@ namespace FinalPojectPRG282
         private System.Windows.Forms.DateTimePicker DOB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnRead;
     }
 }

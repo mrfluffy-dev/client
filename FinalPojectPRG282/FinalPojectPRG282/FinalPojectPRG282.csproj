@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataHandler.cs" />
     <Compile Include="Encriptor.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
     </Compile>

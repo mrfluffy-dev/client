@@ -16,5 +16,16 @@ namespace FinalPojectPRG282
         {
             InitializeComponent();
         }
+
+        private void pic_MouseClick(object sender, MouseEventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+            o.Title = "Image";
+            o.Filter = "JPG | *.jpg| PNG | *.png";
+            if(o.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                pic.ImageLocation = o.FileName;
+            }
+        }
     }
 }

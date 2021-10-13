@@ -30,3 +30,14 @@ Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\ob
 Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.CoreCompileInputs.cache
 Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.exe
 Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.pdb
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csprojAssemblyReference.cache
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.UserForm.resources
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.LoginForm.resources
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.Properties.Resources.resources
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.GenerateResource.cache
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.CoreCompileInputs.cache
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.exe
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.pdb
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe.config
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe
+E:\Janco\Git\Git\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.pdb
