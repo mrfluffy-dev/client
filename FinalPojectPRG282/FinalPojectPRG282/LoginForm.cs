@@ -9,7 +9,7 @@ namespace FinalPojectPRG282
 {
     public partial class LoginForm : Form
     {
-        string path = "MyTest.txt";
+        string path = "Users.txt";
         List<string> users = new List<string>();
         public LoginForm()
         {

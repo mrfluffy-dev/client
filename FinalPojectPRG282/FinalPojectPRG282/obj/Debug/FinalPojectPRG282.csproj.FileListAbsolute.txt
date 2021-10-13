@@ -19,3 +19,14 @@ C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\F
 C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.pdb
 C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.UserForm.resources
 C:\Users\mrfluffy\Desktop\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.LoginForm.resources
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe.config
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.exe
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\bin\Debug\FinalPojectPRG282.pdb
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.AssemblyReference.cache
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.UserForm.resources
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.LoginForm.resources
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.Properties.Resources.resources
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.GenerateResource.cache
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.csproj.CoreCompileInputs.cache
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.exe
+Z:\Documents\uni\prg282\milestine1\client\FinalPojectPRG282\FinalPojectPRG282\obj\Debug\FinalPojectPRG282.pdb
