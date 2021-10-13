@@ -33,7 +33,7 @@ namespace FinalPojectPRG282
             {
                 SqlConnection cons = new SqlConnection(con);
                 cons.Open();
-                string query = $"INSERT INTO tbStudent(StudentNum,StudentName,StudentSurname, StudentImage, StudentDOB, StudentGender, StudentPhone, StudentAddress, StudentModule) VALUES({person.StudentNumber1}, '{person.StudentName1}', '{person.StudentSurname1}', '{person.StudentImage1}', '{person.DOB1}', '{person.StudentGender1}', '{person.StudentPhone1}', '{person.StudentAddres1}', '{person.StudentModule1}')";
+                string query = $"INSERT INTO tbStudent(StudentNum,StudentName,StudentSurname, StudentDOB, StudentGender, StudentPhone, StudentAddress, StudentModule) VALUES({person.StudentNumber1}, '{person.StudentName1}', '{person.StudentSurname1}', '{person.DOB1}', '{person.StudentGender1}', '{person.StudentPhone1}', '{person.StudentAddres1}', '{person.StudentModule1}')";
                 SqlCommand cmd = new SqlCommand(query, cons);
                 cmd.ExecuteNonQuery();
                 cons.Close();
@@ -52,7 +52,7 @@ namespace FinalPojectPRG282
             {
                 SqlConnection cons = new SqlConnection(con);
                 cons.Open();
-                string query = $"UPDATE tbStudent SET StudentName = '{person.StudentName1}', StudentSurname = '{person.StudentSurname1}', StudentImage = '{person.StudentGender1}', StudentDOB = '{person.DOB1}', StudentGender = '{person.StudentGender1}', StudentPhone = '{person.StudentPhone1}', StudentAddress = '{person.StudentAddres1}', StudentModule = '{person.StudentModule1}' WHERE StudentNum = '{person.StudentNumber1}";
+                string query = $"UPDATE tbStudent SET StudentName = '{person.StudentName1}', StudentSurname = '{person.StudentSurname1}', StudentDOB = '{person.DOB1}', StudentGender = '{person.StudentGender1}', StudentPhone = '{person.StudentPhone1}', StudentAddress = '{person.StudentAddres1}', StudentModule = '{person.StudentModule1}'WHERE StudentNum = '{person.StudentNumber1}'";
                 SqlCommand cmd = new SqlCommand(query, cons);
                 cmd.ExecuteNonQuery();
                 cons.Close();

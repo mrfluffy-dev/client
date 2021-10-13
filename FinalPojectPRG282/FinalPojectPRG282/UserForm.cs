@@ -87,30 +87,10 @@ namespace FinalPojectPRG282
             int studentNumber = int.Parse(txtStudentNum.Text);
             string studentName = txtname.Text;
             string studentSurname = txtsurname.Text;
-            string imgLoc = "";
-            byte[] studentFoto;
+            byte[]  studentFoto = null;
 
 
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Title = "Select Picture";
-            dlg.Filter = "JPG | *.jpg| PNG | *.png";
-            if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                imgLoc = dlg.FileName.ToString();
-                pic.ImageLocation = imgLoc;
-            }
-
-
-
-            studentFoto = null;
-            FileStream fs = new FileStream(imgLoc, FileMode.Open, FileAccess.Read);
-            BinaryReader br = new BinaryReader(fs);
-            studentFoto = br.ReadBytes((int)fs.Length);
-
-
-
-
-            DateTime dOB = DOB.Value;
+             DateTime dOB = DOB.Value;
             string studentGender = string.Empty;
             if (Male.Checked == true)
             {
@@ -128,6 +108,7 @@ namespace FinalPojectPRG282
             string studentModule = txtModule.Text;
             string studentAddres = txtAddress.Text;
             Student temp = new Student(studentNumber, studentName, studentSurname, studentFoto, dOB, studentGender, studentPhone, studentAddres, studentModule);
+            dh.Update(temp);
             if (dh.Update(temp))
             {
                 MessageBox.Show("Successfully updated");
@@ -165,6 +146,16 @@ namespace FinalPojectPRG282
                 txtNumber.Text = row.Cells["StudentPhone"].Value.ToString();
                 txtAddress.Text = row.Cells["StudentAddress"].Value.ToString();
                 txtModule.Text = row.Cells["StudentModule"].Value.ToString();
+
+               if (row.Cells["StudentGender"].Value.ToString() == "Male")
+               {
+                    Male.Checked = true;
+               }
+               else
+               {
+                    Female.Checked = true;
+               }
+               
             }
         }
     }
